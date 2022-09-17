@@ -1,0 +1,127 @@
+.delete {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.delete:active {
+  transform: translateY(-1px);
+}
+
+.delete:hover {
+  background-color: #f70000;
+  box-shadow: 0px 15px 20px rgba(231, 16, 16, 0.671);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.edit {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.edit:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(41, 235, 157, 0.637);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.edit:active {
+  transform: translateY(-1px);
+}
+
+.back {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+}
+
+.back > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+.back:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+.back:hover {
+  box-shadow: 9px 9px 33px #413683, -9px -9px 33px #4f30c0;
+  transform: translateY(-2px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.5s ease-in-out;
+}
+
+.add {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+.add::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+.add:hover {
+  color: #e8e8e8;
+}
+
+.add:hover::before {
+  width: 100%;
+}

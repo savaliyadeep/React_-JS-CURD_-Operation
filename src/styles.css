@@ -1,0 +1,18 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.nvb {
+  background: -webkit-linear-gradient(to top, #6dd5ed, #2193b0);
+  background: linear-gradient(to top, #6dd5ed, #2193b0);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
